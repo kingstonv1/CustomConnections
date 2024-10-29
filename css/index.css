@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'nyt-karnak';
+    src: url('../fonts/NYTKarnakCondensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nyt-franklin';
+    src:url('../fonts/franklin-normal-600 (1).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nyt-franklin-500';
+    src: url(../fonts/franklin-normal-500.ttf);
+}
+
+@font-face {
+    font-family: 'nyt-franklin-700';
+    src: url(../fonts/franklin-normal-700.ttf);
+}
+
+#navbar {
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50vw;
+    top: 0px;
+    left: 0px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+#logo {
+    font-family: 'nyt-karnak';
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signature {
+    font-family: 'nyt-franklin';
+    font-size: 28px;
+    font-weight: 300;
+}
+
+#page-body {
+    width: 100%;
+    height: calc(100% - 50px);
+    position: fixed;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-menu {
+    font-family: 'nyt-franklin';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-container {
+    display: flex;
+    gap: 60px;
+}
+
+.main-menu-icon {
+    color: white;
+    stroke: white;
+    fill: white;
+}
+
+.menu-button {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 275px;
+    height: 275px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #efefe6;
+    color: #000;
+}
+
+.menu-button:hover {
+    background-color: #4E595A;
+    color: #FFFFFF;
+}

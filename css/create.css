@@ -1,0 +1,62 @@
+#boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solved-box {
+    background-color: grey;
+    border-radius: 6px;
+    font-size: 20px;
+    width: 30em;
+    height: 4em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.solved-box > input {
+    border: 0px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.solved-box > input:focus {
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+}
+.category-input {
+    font-family: 'nyt-franklin-700';
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 75%;
+    font-stretch: 100%;
+}
+
+.words-input {
+    font-family: 'nyt-franklin-500';
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    max-width: 85%;
+}
+
+#create-submit {
+    min-width: 10em;
+    min-height: 3em;
+    font-family: 'nyt-franklin';
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 32px;
+    cursor: pointer;
+}

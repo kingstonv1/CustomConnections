@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage" prefix="og:http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Custom Connections</title>
+
+    <link rel="canonical" href="https://moderntemplate.site/" />
+    <link rel="amphtml" href="https://moderntemplate.site/amp/index.html" />
+    <link rel="icon" type="image/png" href="./img/icons/64x64.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/create.css">
+
+    <!-- General -->
+    <meta name="application-name" content="Connections" />
+    <meta name="author" content="Lily Vastine" />
+    <meta name="description" content="A customizable version of Connections by New York Times" />
+    <meta name="keywords" content="connections, nyt, games, custom, wordle" />
+    <meta name="referrer" content="strict-origin" />
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="msapplication-tooltip" content="Modern HTML Starter Template" />
+    <meta name="msapplication-TileColor" content="#3c3c3c" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moderntemplate.site/" />
+    <meta property="og:title" content="HTML Template" />
+    <meta property="og:description" content="Modern HTML Starter Template" />
+    <meta property="og:image" content="./img/icons/600x600.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="app" />
+    <meta name="twitter:title" content="Custom Connections" />
+    <meta name="twitter:description" content="Set up custom Connections puzzles for your friends!" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:image" content="" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="HTML Template" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3c3c3c" />
+    <link rel="apple-touch-icon" href="./img/icons/512x512.png" />
+
+    <!-- Android -->
+    <meta name="theme-color" content="#f0f0f0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <link rel="preload" href="./src/css/style.css" as="style" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link rel="preload" href="./src/js/script.js" as="script" />
+
+    <style>
+        /* Critical CSS */
+    </style>
+</head>
+
+<body>
+    <!-- HTML5 -->
+    <header>
+        <nav id="navbar">
+            <div id="logo" onclick="location.href='./index.html';"">Custom Connections</div>
+            <div id="signature"> By Lily V.</div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="page-body">
+            <div id="boxes-container">
+                <h2 style="width: 60%; text-align: center; font-family: 'nyt-franklin';"
+                >Enter comma-seperated words less than 20 characters. Yellow is the easiest category, and purple is the hardest.</h2>
+                <div class="solved-box" style="background-color: #f9df6d;">
+                    <input class="category-input" id="category1" value="First Category Name">
+                    <input class="words-input" id="words1">
+                </div>
+                <div class="solved-box" style="background-color: #a0c35a;">
+                    <input class="category-input" id="category2" value="Second Category Name">
+                    <input class="words-input" id="words2">
+                </div>
+                <div class="solved-box" style="background-color: #b0c4ef;">
+                    <input class="category-input" id="category3" value="Third Category Name">
+                    <input class="words-input" id="words3">
+                </div>
+                <div class="solved-box" style="background-color: #ba81c5;">
+                    <input class="category-input" id="category4" value="Fourth Category Name">
+                    <input class="words-input" id="words4">
+                </div>
+                <div id="buttons-container">
+                    <button id="create-submit">Done</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/index.js" type="module"></script>
+    <script src="../sw-register.js"></script>
+</body>
+
+</html>
