@@ -1,3 +1,7 @@
+* {
+    font-family: 'nyt-franklin';
+}
+
 #boxes-container {
     display: flex;
     justify-content: center;
@@ -49,14 +53,62 @@
     max-width: 85%;
 }
 
-#create-submit {
+button {
     min-width: 10em;
     min-height: 3em;
-    font-family: 'nyt-franklin';
     font-size: 16px;
     background-color: white;
     color: black;
     border: 2px solid black;
     border-radius: 32px;
     cursor: pointer;
+}
+
+#error-ribbon {
+    background-color: rgb(255, 135, 135);
+    height: 2em;
+    padding-left: 5px;
+    padding-right: 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    opacity: 0%;
+}
+
+#done-popup {
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    width: 30vw;
+    height: auto;
+    padding-bottom: 55px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px -1px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: auto;
+}
+
+#popup-content {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
 }
